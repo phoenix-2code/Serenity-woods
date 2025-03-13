@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Accommodations</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <nav>
+    <!-- Nav bar code reused -->
+    <div class="logo" style="position: relative;">
+        <img src="SERENITY.png" alt="SERENITY WOODS LOGO" style="width: 75px;">
+    </div>
+    <ul class="main-nav">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+    </ul>
+    <hr class="nav-divider">
+    <ul class="secondary-nav">
+        <li><a href="restaurant.html">RESTAURANT</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="wellness and spa.html">WELLNESS AND SPA</a></li>
+        <li><a href="active leisure.html">ACTIVITIES</a></li>
+        <li><a href="accomodation.html">ACCOMODATIONS</a></li>
+    </ul>
+</nav>
+
+  <header>
+    <h1>Book Your Stay at Serenity Woods</h1>
+  </header>
+
+  <main>
+    <section id="booking-form">
+      <h2>Accommodation Booking</h2>
+      <form id="accommodation-booking-form">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <!-- Phone Field -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <!-- Accommodation Selection -->
+        <label for="accommodation">Choose Accommodation Type:</label>
+        <select id="accommodation" name="accommodation" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="a-frames">A Frames</option>
+          <option value="yurt">Yurt on the River</option>
+          <option value="cottage-premium">Cottage Premium</option>
+          <option value="cottage-standard">Cottage Standard</option>
+          <option value="tree-house">Tree House</option>
+          <option value="luxury-pool">Luxury Pool</option>
+        </select>
+    
+        <!-- Check-in and Check-out Dates -->
+        <label for="checkin-date">Check-in Date:</label>
+        <input type="date" id="checkin-date" name="checkin-date" required>
+    
+        <label for="checkout-date">Check-out Date:</label>
+        <input type="date" id="checkout-date" name="checkout-date" required>
+    
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+    
+        <!-- Special Requests -->
+        <label for="requests">Special Requests (Optional):</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Let us know your preferences or special needs."></textarea>
+    
+        <!-- Submit Button -->
+        <button type="button" onclick="submitAccommodationBooking()">Book Now</button>
+      </form>
+    </section>
+    
+    <script>
+      function submitAccommodationBooking() {
+        // Retrieve form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const accommodation = document.getElementById('accommodation').value;
+        const checkinDate = document.getElementById('checkin-date').value;
+        const checkoutDate = document.getElementById('checkout-date').value;
+        const guests = document.getElementById('guests').value;
+        const requests = document.getElementById('requests').value;
+    
+        // Display confirmation alert
+        alert(`Booking Successful!\n\nDetails:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAccommodation: ${accommodation}\nCheck-in: ${checkinDate}\nCheck-out: ${checkoutDate}\nGuests: ${guests}\nSpecial Requests: ${requests || 'None'}`);
+      }
+    </script>
+    
+  </main>
+
+  <footer>
+    <div style="text-align: center;padding: 20px;">
+        <div class="logo">
+            <img src="SERENITY.png" alt="Serenity Woods Logo" style="width: 100px;">
+        </div>
+        <p>&copy; 2025 Serenity Woods. All rights reserved.</p>
+        <p>Contact: 0712345678 | Email: contact@serenitywoods.com</p>
+        <p>Follow us on social media:</p>
+        <ul class="footer-socials">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>&copy; 2025 Serenity Woods. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #4CAF50;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input, form select, form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Cards (Meals, Activities, etc.) */
+.meal, .activity, .house-option, .service {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.meal h2, .activity h2, .house-option h2, .service h2 {
+  margin: 10px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.meal p, .activity p, .house-option p, .service p {
+  color: #555;
+}
+
+.meal button, .activity button, .house-option button, .service button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Make button full width */
+}
+
+.meal button:hover, .activity button:hover, .house-option button:hover, .service button:hover {
+  background-color: #45a049;
+}
+
+#restaurant-cta {
+  background-color: #fef6e4; /* Soft warm background */
+  text-align: center;
+  padding: 30px 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#restaurant-cta h2 {
+  font-size: 24px;
+  color: #d35400; /* Warm color matching food theme */
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+#restaurant-cta p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+#restaurant-cta button {
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restaurant-cta button:hover {
+  background-color: #e67e22; /* Slightly lighter on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Dark background for contrast */
+  color: #f9f9f9; /* Light text for readability */
+  text-align: center; /* Centers content */
+  padding: 20px; /* Adds breathing space */
+  font-size: 14px; /* Elegant and readable size */
+  border-top: 3px solid #4CAF50; /* Stylish top border */
+}
+
+footer p {
+  margin: 5px 0; /* Adds spacing between lines */
+}
+
+footer .footer-socials {
+  list-style-type: none; /* Removes default bullets */
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex; /* Creates inline items */
+  justify-content: center; /* Centers the items */
+}
+
+footer .footer-socials li {
+  margin: 0 10px; /* Adds spacing between social media links */
+}
+
+footer .footer-socials li a {
+  color: #4CAF50; /* Highlight links with a theme color */
+  text-decoration: none; /* Removes underline */
+}
+
+footer .footer-socials li a:hover {
+  color: #fff; /* Changes to white on hover for a classy effect */
+  text-decoration: underline; /* Adds emphasis */
+}
+
+
+h1, h2 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: left;
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  button {
+    text-align: center;
+  }
+  

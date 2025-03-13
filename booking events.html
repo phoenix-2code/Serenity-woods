@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Booking</title>
+  <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Nav bar code reused -->
+   <nav>
+    <!-- Nav bar code reused -->
+    <div class="logo" style="position: relative;">
+        <img src="SERENITY.png" alt="SERENITY WOODS LOGO" style="width: 75px;">
+    </div>
+    <ul class="main-nav">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+    </ul>
+    <hr class="nav-divider">
+    <ul class="secondary-nav">
+        <li><a href="restaurant.html">RESTAURANT</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="wellness and spa.html">WELLNESS AND SPA</a></li>
+        <li><a href="active leisure.html">ACTIVITIES</a></li>
+        <li><a href="accomodation.html">ACCOMODATIONS</a></li>
+    </ul>
+</nav>
+  <header>
+    <h1>Book Your Event</h1>
+  </header>
+  <main>
+    <section id="event-booking">
+      <h2>Book Your Event</h2>
+      <form id="event-booking-form">
+        <!-- Event Type -->
+        <label for="event-type">Event Type:</label>
+        <select id="event-type" name="event-type" required>
+          <option value="" disabled selected>Select an event type</option>
+          <option value="wedding">Wedding</option>
+          <option value="corporate">Corporate</option>
+          <option value="celebration">Celebration</option>
+          <option value="family reunions">Family Reunions</option>
+          <option value="engagement parties">Engagement Parties</option>
+          <option value="workshops and seminars">Workshops and Seminars</option>
+          <option value="retreats">Retreats</option>
+          <option value="anniversary celebrations">Anniversary Celebrations</option>
+          <option value="outdoor festival">Outdoor Festival</option>
+        </select>
+    
+        <!-- Event Date -->
+        <label for="date">Event Date:</label>
+        <input type="date" id="date" name="date" required>
+    
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+    
+        <!-- Special Requests -->
+        <label for="requests">Special Requests (Optional):</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Add any special requirements here."></textarea>
+    
+        <!-- Submit Button -->
+        <button type="button" onclick="submitEventBooking()">Book Now</button>
+      </form>
+    </section>
+    
+    <script>
+      function submitEventBooking() {
+        // Retrieve form data
+        const eventType = document.getElementById('event-type').value;
+        const date = document.getElementById('date').value;
+        const guests = document.getElementById('guests').value;
+        const requests = document.getElementById('requests').value;
+    
+        // Display confirmation alert
+        alert(`Booking Successful!\n\nEvent Details:\nEvent Type: ${eventType}\nDate: ${date}\nNumber of Guests: ${guests}\nSpecial Requests: ${requests || 'None'}`);
+      }
+    </script>
+    
+  </main>
+  <footer>
+    <div style="text-align: center;padding: 20px;">
+        <div class="logo">
+            <img src="SERENITY.png" alt="Serenity Woods Logo" style="width: 100px;">
+        </div>
+        <p>&copy; 2025 Serenity Woods. All rights reserved.</p>
+        <p>Contact: 0712345678 | Email: contact@serenitywoods.com</p>
+        <p>Follow us on social media:</p>
+        <ul class="footer-socials">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>&copy; 2025 Serenity Woods. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
+

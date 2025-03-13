@@ -1,0 +1,663 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #4CAF50; /* Green background for the navigation bar */
+  padding: 10px; /* Padding around the navigation bar */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Display list items in a row */
+  justify-content: center; /* Center the list items */
+}
+
+nav ul li {
+  margin: 0 15px; /* Space between list items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White text color for links */
+  font-size: 16px; /* Font size for links */
+  padding: 5px 10px; /* Padding around links */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+nav ul li a:hover {
+  background-color: #45a049; /* Lighter green background on hover */
+}
+
+/* Header Styles */
+.header {
+  position: relative; /* Position relative for absolute positioning of child elements */
+  height: 100px; /* Height of the header */
+}
+
+.logo-container {
+  position: absolute; /* Position absolute for precise placement */
+  top: 10px; /* Align logo vertically */
+  right: 10px; /* Align logo to the right */
+}
+
+.logo {
+  width: 80px; /* Width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.hero-image {
+  position: relative; /* Position relative for absolute positioning of text */
+  text-align: center; /* Center the text */
+  color: #CD6839; /* Text color */
+  text-shadow: 4px 4px 4px #000000; /* Text shadow for readability */
+}
+
+.hero-image img {
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.hero-text {
+  position: absolute; /* Position absolute for precise placement */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to exact center */
+  text-align: center; /* Center the text */
+}
+
+/* General Box Sizing */
+
+
+/* Intro Section Styles */
+#intro {
+  background-color: #e8f5e9; /* Soft green background */
+  text-align: center; /* Center the text */
+  padding: 40px 20px; /* Padding around the content */
+  margin-bottom: 20px; /* Space below the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+#intro h1 {
+  font-size: 32px; /* Font size for the heading */
+  color: #2c3e50; /* Deep green/blue for contrast */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+#intro p {
+  color: #555; /* Text color */
+  font-size: 18px; /* Font size for the paragraph */
+  line-height: 1.6; /* Line height for readability */
+}
+
+/* Number Text Styles */
+.numbertext {
+  color: #f2f2f2; /* Text color */
+  font-size: 12px; /* Font size */
+  padding: 8px 12px; /* Padding around the text */
+  position: absolute; /* Position absolute for precise placement */
+  top: 0; /* Align to the top */
+}
+
+/* Caption Container Styles */
+.caption-container {
+  text-align: center; /* Center the text */
+  background-color: #222; /* Dark background color */
+  padding: 2px 16px; /* Padding around the content */
+  color: white; /* Text color */
+}
+
+/* Row Styles */
+.row:after {
+  content: ""; /* Clearfix hack */
+  display: table; /* Clearfix hack */
+  clear: both; /* Clearfix hack */
+}
+
+/* Column Styles */
+.column {
+  float: left; /* Float columns to the left */
+  width: 16.66%; /* Width of each column */
+}
+
+/* Dot Styles */
+.dot {
+  cursor: pointer; /* Pointer cursor on hover */
+  height: 15px; /* Height of the dot */
+  width: 15px; /* Width of the dot */
+  margin: 0 2px; /* Space between dots */
+  background-color: #bbb; /* Background color */
+  border-radius: 50%; /* Circular shape */
+  display: inline-block; /* Inline block display */
+  transition: background-color 0.6s ease; /* Smooth transition on hover */
+}
+
+.active, .dot:hover {
+  background-color: #717171; /* Background color on hover */
+}
+
+/* Service Info Styles */
+.service-info {
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above the section */
+}
+
+.service-tags span {
+  display: inline-block; /* Inline block display */
+  background-color: #f1f1f1; /* Background color */
+  padding: 5px 10px; /* Padding around the text */
+  margin: 5px; /* Space between tags */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.service-info p {
+  margin: 20px 0; /* Space above and below the paragraph */
+}
+
+.service-info .btn {
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Figure Styles */
+figure {
+  display: block; /* Block display */
+  margin: auto; /* Center the figure */
+}
+
+/* Testimonials Section Styles */
+#testimonials {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 30px; /* Space above the section */
+}
+
+#testimonials h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Text color */
+}
+
+.testimonial {
+  margin-bottom: 15px; /* Space below the testimonial */
+  text-align: center; /* Center the text */
+  font-style: italic; /* Italic text */
+}
+
+.testimonial h4 {
+  margin-top: 5px; /* Space above the heading */
+  color: #555; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+/* Call-to-Action Section Styles */
+#cta {
+  background-color: #fffae6; /* Soft warm background */
+  text-align: center; /* Center the text */
+  padding: 30px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Space above the section */
+}
+
+#cta h2 {
+  color: #333; /* Text color */
+  font-size: 24px; /* Font size */
+}
+
+#cta p {
+  color: #555; /* Text color */
+  font-size: 16px; /* Font size */
+  margin: 15px 0; /* Space above and below the paragraph */
+}
+
+#cta button {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#cta button:hover {
+  background-color: #45a049; /* Lighter green background on hover */
+}
+
+/* General Styles */
+body {
+  font-family: 'Lato', sans-serif; /* Body text font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #F4F4F4; /* Light grey background color */
+  color: #333; /* Text color */
+}
+
+header {
+  text-align: center; /* Center the text */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  padding: 20px 0; /* Padding around the content */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2.5rem; /* Font size */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+main {
+  padding: 20px; /* Padding around the content */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 30px; /* Space below the section */
+  padding: 20px; /* Padding around the content */
+  background-color: white; /* White background color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+section h2 {
+  margin-top: 0; /* Remove default margin */
+  color: #4CAF50; /* Green text color */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+/* Form Styles */
+form {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column layout */
+  max-width: 500px; /* Maximum width */
+  margin: 0 auto; /* Center the form */
+}
+
+form label {
+  margin-top: 10px; /* Space above the label */
+}
+
+form input, form select, form textarea {
+  margin-top: 5px; /* Space above the input */
+  padding: 10px; /* Padding around the input */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+form button {
+  margin-top: 15px; /* Space above the button */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px; /* Padding around the button */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+form button:hover {
+  background-color: #45a049; /* Lighter green background on hover */
+}
+
+/* Card Styles */
+.meal, .activity, .house-option, .service {
+  margin-bottom: 20px; /* Space below the card */
+  padding: 15px; /* Padding around the content */
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text */
+}
+
+.meal h2, .activity h2, .house-option h2, .service h2 {
+  margin: 10px 0; /* Space above and below the heading */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+.meal p, .activity p, .house-option p, .service p {
+  color: #555; /* Text color */
+}
+
+.meal button, .activity button, .house-option button, .service button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding around the button */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width button */
+}
+
+.meal button:hover, .activity button:hover, .house-option button:hover, .service button:hover {
+  background-color: #45a049; /* Lighter green background on hover */
+}
+
+/* Restaurant Call-to-Action Styles */
+#restaurant-cta {
+  background-color: #fef6e4; /* Soft warm background */
+  text-align: center; /* Center the text */
+  padding: 30px 20px; /* Padding around the content */
+  margin: 30px 0; /* Space above and below the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+#restaurant-cta h2 {
+  font-size: 24px; /* Font size */
+  color: #d35400; /* Warm color matching food theme */
+  margin-bottom: 10px; /* Space below the heading */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+#restaurant-cta p {
+  color: #555; /* Text color */
+  font-size: 16px; /* Font size */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+#restaurant-cta button {
+  background-color: #d35400; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#restaurant-cta button:hover {
+  background-color: #e67e22; /* Slightly lighter on hover */
+}
+
+/* Website Call-to-Action Styles */
+#website-cta {
+  background-color: #f4f4f4; /* Light grey background */
+  text-align: center; /* Center the text */
+  padding: 30px 20px; /* Padding around the content */
+  margin: 30px 0; /* Space above and below the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+#website-cta h2 {
+  font-size: 24px; /* Font size */
+  color: #2c3e50; /* Elegant dark color for the header */
+  margin-bottom: 10px; /* Space below the heading */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+#website-cta p {
+  color: #555; /* Text color */
+  font-size: 16px; /* Font size */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+#website-cta button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  width: 100%; /* Full width button */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#website-cta button:hover {
+  background-color: #45a049; /* Slightly lighter on hover */
+}
+
+/* Event Call-to-Action Styles */
+#event-cta {
+  background-color: #f5f5f5; /* Soft neutral background */
+  text-align: center; /* Center the text */
+  padding: 30px 20px; /* Padding around the content */
+  margin: 30px 0; /* Space above and below the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+#event-cta h2 {
+  font-size: 24px; /* Font size */
+  color: #4CAF50; /* Green for harmony and nature */
+  margin-bottom: 10px; /* Space below the heading */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+#event-cta p {
+  color: #555; /* Text color */
+  font-size: 16px; /* Font size */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+#event-cta button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  width: 100%; /* Full width button */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#event-cta button:hover {
+  background-color: #45a049; /* Slightly lighter green on hover */
+}
+
+/* Accommodation Call-to-Action Styles */
+#accommodation-cta {
+  background-color: #e8f5e9; /* Soft green to match the nature theme */
+  text-align: center; /* Center the text */
+  padding: 30px 20px; /* Padding around the content */
+  margin: 30px 0; /* Space above and below the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+#accommodation-cta h2 {
+  font-size: 24px; /* Font size */
+  color: #4CAF50; /* Matches the green theme */
+  margin-bottom: 10px; /* Space below the heading */
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+#accommodation-cta p {
+  color: #555; /* Text color */
+  font-size: 16px; /* Font size */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+#accommodation-cta button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  width: 100%; /* Full width button */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#accommodation-cta button:hover {
+  background-color: #45a049; /* Lighter green on hover */
+}
+
+footer {
+  background-color: #333; /* Dark background for contrast */
+  color: #f9f9f9; /* Light text for readability */
+  text-align: center; /* Centers content */
+  padding: 20px; /* Adds breathing space */
+  font-size: 14px; /* Elegant and readable size */
+  border-top: 3px solid #4CAF50; /* Stylish top border */
+}
+
+footer p {
+  margin: 5px 0; /* Adds spacing between lines */
+}
+
+footer .footer-socials {
+  list-style-type: none; /* Removes default bullets */
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex; /* Creates inline items */
+  justify-content: center; /* Centers the items */
+}
+
+footer .footer-socials li {
+  margin: 0 10px; /* Adds spacing between social media links */
+}
+
+footer .footer-socials li a {
+  color: #4CAF50; /* Highlight links with a theme color */
+  text-decoration: none; /* Removes underline */
+}
+
+footer .footer-socials li a:hover {
+  color: #fff; /* Changes to white on hover for a classy effect */
+  text-decoration: underline; /* Adds emphasis */
+}
+
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  line-height: 1.6; /* Improves readability */
+}
+
+button {
+  text-align: center;
+}
+ 
+
+body {
+  background-color: #F4F4F4;
+}
+
+header {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+
+.card {
+  width: 300px; /* Uniform card width */
+  height: 450px; /* Uniform card height */
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.card-body h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card-img-top {
+  width: 100%; /* Image spans the card's width */
+  height: 200px; /* Consistent image height */
+  object-fit: cover; /* Ensures the image scales proportionally without distortion */
+  border-radius: 10px 10px 0 0; /* Rounds top corners */
+}
+
+.services-tags {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px;
+}
+
+.services-tags span {
+  display: inline-block;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049; /* Slightly lighter green */
+}
+
+
+body {
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.card {
+  border-radius: 15px; /* Smooth rounded corners */
+  background: #ffffff; /* White background for the form */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Elegant shadow effect */
+}
+
+.card h3 {
+  color: #4CAF50; /* Nature-inspired green */
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+textarea.form-control {
+  border-radius: 15px; /* Rounded edges for textarea */
+}
+
+button {
+  background-color: #4CAF50; /* Vibrant green for the button */
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Slightly lighter green on hover */
+  transform: scale(1.02); /* Subtle scaling effect */
+}
+
+
